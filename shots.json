@@ -1,0 +1,5 @@
+[
+  { "file": "1-checklist.jpg", "path": "/", "viewport": { "width": 1280, "height": 800 }, "view": "Default view of the running app: progress bar, spoiler toggle, grade/kind filters, roadmap and trophy checklist" },
+  { "file": "2-gold-trophies.jpg", "path": "/?grade=gold", "viewport": { "width": 1280, "height": 800 }, "view": "Grade filter set to Gold: only the two gold trophies listed" },
+  { "file": "3-spoiler-mode.jpg", "path": "/?spoiler=1", "viewport": { "width": 1280, "height": 800 }, "view": "Spoiler mode on: unearned story trophy names and guides hidden behind placeholders" }
+]

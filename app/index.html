@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GTA VI Trophy Guide & Tracker</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1>GTA VI trophy guide & tracker</h1>
+<div class="toolbar">
+  <div class="progress">
+    <div id="progress">0 of 55 earned</div>
+    <div class="bar-track"><div class="bar-fill" id="bar"></div></div>
+  </div>
+  <div class="filters">
+    <label><input type="checkbox" id="spoiler"> Spoiler mode (hide unearned story trophy names &amp; guides)</label>
+    <label>Grade: <select id="grade"><option>All</option><option>Platinum</option><option>Gold</option><option>Silver</option><option>Bronze</option></select></label>
+    <label>Kind: <select id="kind"><option>All</option><option>story</option><option>missable</option><option>collectibles</option><option>activities</option></select></label>
+  </div>
+  <div class="actions">
+    <button id="export">Export progress</button>
+    <button id="import">Import progress</button>
+    <input type="file" id="import-file" accept=".json" hidden>
+  </div>
+</div>
+
+<div class="roadmap" id="roadmap"></div>
+
+<section class="table-wrap">
+  <table id="board">
+    <thead>
+      <tr>
+        <th style="width:44px">✓</th>
+        <th>Trophy</th>
+        <th style="width:96px">Grade</th>
+        <th style="width:110px">Kind</th>
+        <th style="width:110px">Missable</th>
+        <th>Guide</th>
+        <th style="width:260px">Source</th>
+      </tr>
+    </thead>
+    <tbody id="board-body"></tbody>
+  </table>
+</section>
+
+<p class="note">Offline guide — loads nothing but files under app/. Progress is saved in your browser (localStorage). Use Export/Import to move your checklist between devices.</p>
+
+<script type="module" src="app.js"></script>
+</body>
+</html>
